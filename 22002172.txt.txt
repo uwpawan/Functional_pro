@@ -10,7 +10,7 @@ volumeSphere(5);
 def discountForABook(x:Double) = (40/100)*x;
 def finalPrice0fBook(x:Double) = x-discountForABook(x);
 def shipCost(x:Int) = if (x>50) {3+(x-50)*0.75} else {3};
-def totalCost(x:Int, y:Double) = shipCost(x) + x*finalPrice0fBookYes;
+def totalCost(x:Int, y:Double) = shipCost(x) + x*finalPrice0fBook(y);
 val cost = totalCost(60,24.95);
 ---------------------------------------------------------------------------
 def easyPaceTime(x:Int) = x*8;
